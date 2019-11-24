@@ -1,6 +1,6 @@
 FROM debian:buster-slim
 
-MAINTAINER Usuario001 "patinogutierrez@icloud.com"
+MAINTAINER sebastianCarry "sebastian.carry@gmail.com"
 
 ENV NGINX_VERSION   1.16.1
 ENV NJS_VERSION     0.3.5
@@ -114,4 +114,3 @@ WORKDIR /usr/share/nginx/html/
 EXPOSE 443/tcp 80/tcp
 
 ENTRYPOINT ["/usr/sbin/nginx", "-g", "daemon off;"]
-
